@@ -1,0 +1,149 @@
+* {
+  /*global stilering*/
+  font-family: roboto, helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 500px 500px 1fr;
+    grid-template-rows: 65px auto 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+
+    "header header header header"
+    "meny meny meny meny"
+    ". articleCont articleCont ."
+    ". articleCont articleCont ."
+    ". articleCont  articleCont ."
+    "footer footer footer footer";
+}
+
+
+
+.body {
+    background-image: url(BG.png);
+    background-repeat: no-repeat;
+}
+
+.logo { /*min logo sentreres i header*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+  background-image: url(headerBG.png);
+background-repeat: no-repeat;
+color: #FFF;
+grid-area: header;
+background-color: rgba(0, 0, 0, 0.5);
+padding: 5px;
+padding-left: 10px;
+padding-top: 3px;
+border-bottom: 5px solid #1c7fc3;
+text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+}
+header p{
+  font-size: 10px;
+  line-height: 0px;
+  letter-spacing: 17.5px;
+}
+header h1{
+  font-size: 40px;
+}
+
+.articleCont {
+    background-color: #202020;
+    grid-area: articleCont;
+    color:#202020;
+    border-top: 5px solid #42bae7;
+    color: #FFF;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    box-shadow: 2px 2px 16px -2px rgba(0,0,0,0.75);
+}
+
+.articleCont h1{
+  color: #42bae7;
+}
+
+.imageCont {
+    background-color: #202020;
+    grid-area: imageCont;
+    color:#202020;
+    border: 2px solid #3d3d3d;
+    border-radius: 5px;
+    color: antiquewhite;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    box-shadow: 2px 2px 16px -2px rgba(0,0,0,0.75);
+    background-image: url(texture2.png);
+}
+
+.footer { /*footer (nederst på siden*/
+  grid-area: footer;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-top: 5px solid #42bae7;
+    padding: 10px;
+    margin-top: 188px;
+    text-align: center;
+}
+
+.headlines {
+    text-shadow:0px 2px 3px #0f0f0f;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.paragraphs {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+
+/* Meny (webkit) #StealingisLearning :> */
+.meny{
+  text-align: center;
+  grid-area: meny;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  margin-bottom: 47px;
+}
+
+.meny a{
+  text-decoration: none;
+  margin-left: 60px;
+  color: #FFF;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+  padding-bottom: 10px;
+}
+
+.meny a:hover{
+  color: #42bae7;
+  border-bottom: 5px solid #FFF;
+  padding-bottom: 5px;
+}
+
+/* scrolle baren*/
+::-webkit-scrollbar {
+  width: 5px;
+  margin-left: 10px;
+}
+
+/* banen */
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.9)
+}
+
+/* håndtaket */
+::-webkit-scrollbar-thumb {
+  background: rgba(150, 150, 150, 0.5);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(66, 186, 231, 0.5);
+}
