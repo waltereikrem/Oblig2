@@ -1,0 +1,15 @@
+*{
+  color: black !important;
+  font-family: times;
+  border: 0px !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+header{
+display: none;
+}
+
+nav{
+display: none;
+}
